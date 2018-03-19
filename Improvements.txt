@@ -1,0 +1,26 @@
+Improvements needed
+
+Deck:
+1. Deck shuffling
+2. Deck of cards used
+3. printDeck function
+4. printUsedDeck function 
+
+Hand:
+1. Accumulating rounds won for each player
+2. showCardsInHand function
+
+CardGame:
+1. Options to start or quit game
+2. Set number of players
+3. Set cards per player for every round
+4. Show cards left in Deck
+5. Show deck of used cards
+6. Show winner of the round
+7. Determine overall winner of the game
+
+Overall:
+1. Compile seperate files into less files
+2. Adhere to C# practices(naming conventions for functions)
+3. Concise and relevant documentation
+4. Better game mechanism(further discussions needed) 
