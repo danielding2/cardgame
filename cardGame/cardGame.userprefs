@@ -5,10 +5,11 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.cardGame PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="cardGame\Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="cardGame Status">
     <Files>
-      <File FileName="cardGame\Program.cs" Line="110" Column="1" />
-      <File FileName="cardGame\CardGame.cs" Line="1" Column="1" />
+      <File FileName="cardGame\Program.cs" Line="1" Column="1" />
+      <File FileName="cardGame\Deck.cs" Line="39" Column="1" />
+      <File FileName="cardGame Status" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

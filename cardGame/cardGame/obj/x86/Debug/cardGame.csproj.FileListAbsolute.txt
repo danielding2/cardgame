@@ -9,3 +9,14 @@ E:\Downloads\@School\DP1\Week 5\New folder\cardGame\cardGame\bin\Debug\normnfkc.
 E:\Downloads\@School\DP1\Week 5\New folder\cardGame\cardGame\bin\Debug\normnfkd.nlp
 E:\Downloads\@School\DP1\Week 5\New folder\cardGame\cardGame\obj\x86\Debug\cardGame.exe
 E:\Downloads\@School\DP1\Week 5\New folder\cardGame\cardGame\obj\x86\Debug\cardGame.pdb
+E:\Downloads\@School\DP1\Week 5\cardgame\cardGame\cardGame\bin\Debug\cardGame.exe
+E:\Downloads\@School\DP1\Week 5\cardgame\cardGame\cardGame\bin\Debug\cardGame.pdb
+E:\Downloads\@School\DP1\Week 5\cardgame\cardGame\cardGame\bin\Debug\mscorlib.dll
+E:\Downloads\@School\DP1\Week 5\cardgame\cardGame\cardGame\bin\Debug\normidna.nlp
+E:\Downloads\@School\DP1\Week 5\cardgame\cardGame\cardGame\bin\Debug\normnfc.nlp
+E:\Downloads\@School\DP1\Week 5\cardgame\cardGame\cardGame\bin\Debug\normnfd.nlp
+E:\Downloads\@School\DP1\Week 5\cardgame\cardGame\cardGame\bin\Debug\normnfkc.nlp
+E:\Downloads\@School\DP1\Week 5\cardgame\cardGame\cardGame\bin\Debug\normnfkd.nlp
+E:\Downloads\@School\DP1\Week 5\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.csprojResolveAssemblyReference.cache
+E:\Downloads\@School\DP1\Week 5\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.exe
+E:\Downloads\@School\DP1\Week 5\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.pdb

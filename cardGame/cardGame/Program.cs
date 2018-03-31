@@ -3,12 +3,37 @@ using System.Collections.Generic;
 
 public class CardGame
 {
+	
 	public static void Main(string[] args)
 	{
+		//Determine number of players
+		bool playersCreated = false;
+		int numOfPlayers;
+		do
+		{
+			Console.WriteLine("Please enter number of players:");
+			numOfPlayers = Convert.ToInt32(Console.ReadLine());
+
+			if (numOfPlayers < 2)
+			{
+				Console.WriteLine("\nPlease enter at least 2 Players");
+				Console.ReadLine();
+				Console.Clear();
+			}
+			else if (numOfPlayers >= 2)
+			{
+				Console.WriteLine("\n{0} Players Created!", numOfPlayers);
+				playersCreated = true;
+			}
+		} while (playersCreated == false);
+
+		Console.WriteLine("\nPress any key to START");
+		Console.ReadLine();
+		Console.Clear();
+
 
 		Hand[] player;
 		bool gameOver = false;
-		int numOfPlayers = 2;
 		int cardsPerPlayer = 1;
 		List<int> playerScore;
 
@@ -28,9 +53,11 @@ public class CardGame
 
 			do
 			{
+				numOfRounds = roundsCheck(deck, numOfPlayers, cardsPerPlayer);
 				if (roundNum != 0)
 				{
 					Console.WriteLine("Round: " + roundNum);
+					Console.WriteLine("Rounds remaining: " + numOfRounds);
 					dealPlayerCards(player, cardsPerPlayer, deck);
 
 					playerScore = new List<int>();
@@ -39,15 +66,17 @@ public class CardGame
 
 				};
 
+
+
 				Console.WriteLine("");
-				Console.WriteLine("Available cards: " /* + missing function */);
+				Console.WriteLine("Available cards: {0}", deck.DeckSize);
 
 				if (roundNum != numOfRounds)
 				{
 					ConsoleKeyInfo key;
 					do
 					{
-						Console.WriteLine("Please press Enter to deal cards");
+						Console.WriteLine("Please press Enter to deal cards\n");
 						key = Console.ReadKey();
 					} while (!key.Key.Equals(ConsoleKey.Enter));
 				}
@@ -58,7 +87,7 @@ public class CardGame
 
 				roundNum++;
 
-			} while (roundNum <= numOfRounds);
+			} while (numOfRounds != 0);
 
 			gameOver = true;
 		}
@@ -69,7 +98,7 @@ public class CardGame
 
 	internal static int roundsCheck(Deck deck, int numOfPlayers, int cardsPerPlayer)
 	{
-		int numOfRounds = deck.DeckSize / (numOfPlayers * cardsPerPlayer);
+		int numOfRounds = (deck.DeckSize / (numOfPlayers * cardsPerPlayer)) - 1;
 		return numOfRounds;
 	}
 
@@ -106,4 +135,5 @@ public class CardGame
 			}
 		}
 	}
+
 }
