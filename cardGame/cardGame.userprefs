@@ -8,21 +8,12 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="cardGame Status">
     <Files>
       <File FileName="cardGame\Program.cs" Line="1" Column="1" />
-      <File FileName="cardGame\Deck.cs" Line="39" Column="1" />
+      <File FileName="cardGame\Deck.cs" Line="1" Column="1" />
+      <File FileName="cardGame\Card.cs" Line="11" Column="3" />
+      <File FileName="cardGame\Ranks.cs" Line="1" Column="1" />
+      <File FileName="cardGame\Suits.cs" Line="1" Column="1" />
       <File FileName="cardGame Status" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="cardGame" expanded="True">
-            <Node name="cardGame" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
 </Properties>
