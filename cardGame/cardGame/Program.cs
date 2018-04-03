@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 
 public class CardGame
@@ -56,6 +57,8 @@ public class CardGame
                 numOfRounds = roundsCheck(deck, numOfPlayers, cardsPerPlayer);
                 if (roundNum != 0)
                 {
+                    deck.printDeck();
+                    Console.WriteLine("");
                     Console.WriteLine("Round: " + roundNum);
                     Console.WriteLine("Rounds remaining: " + numOfRounds);
                     dealPlayerCards(player, cardsPerPlayer, deck);

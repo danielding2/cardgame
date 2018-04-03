@@ -1,7 +1,8 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
-internal class Deck
+internal class Deck : IEnumerable<Card>
 {
 
 	private Stack<Card> deck;
@@ -64,7 +65,8 @@ internal class Deck
 
 		for (j = 0; j < deckList.Count; j++)
 		{
-			Console.WriteLine(deckList[j]);		}*/
+			Console.WriteLine(deckList[j]);
+		}*/
 
 
 		//Shuffle it and store in shuffledDeck
@@ -130,10 +132,25 @@ internal class Deck
 		Card poppedCards = deck.Pop();
 		return poppedCards;
 	}
-	
-	// public virtual string printDeck()
-	// {
-		// return deck.ToString;
-	// }
+
+    //Allows readonly access to Deck collection and with 
+    //such implementation allows a for-each statement.
+    public IEnumerator<Card> GetEnumerator()
+    {
+        return ((IEnumerable<Card>)deck).GetEnumerator();
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return ((IEnumerable<Card>)deck).GetEnumerator();
+    }
+
+    public virtual void printDeck()
+    {
+        foreach (Card c in deck)
+        {
+            Console.Write(c + " ");
+        }
+    }
 
 }
