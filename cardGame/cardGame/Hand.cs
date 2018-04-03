@@ -4,6 +4,8 @@ internal class Hand
 {
 	private List<Card> cardsInHand;
 	private int sumOfCardValues;
+    private int winCount = 0;
+    private bool winnerForTheRound = false;
 
 	internal Hand()
 	{
@@ -41,5 +43,25 @@ internal class Hand
 		cardsInHand.Clear();
 		cardsInHand = new List<Card>(3);
 	}
+
+    public void addWinCount()
+    {
+        this.winCount++;
+    }
+
+    public int getWinCount()
+    {
+        return winCount;
+    }
+
+    public void setWinnerForTheRound(bool winnerForTheRound)
+    {
+        this.winnerForTheRound = winnerForTheRound;
+    }
+
+    public bool getWinnerForTheRound()
+    {
+        return winnerForTheRound;
+    }
 
 }
