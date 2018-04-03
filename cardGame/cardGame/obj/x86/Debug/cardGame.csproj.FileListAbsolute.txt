@@ -37,3 +37,14 @@ C:\Users\Raymond\Documents\GitHub\cardgame\cardGame\cardGame\obj\x86\Debug\cardG
 C:\Users\Raymond\Documents\GitHub\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.csproj.CoreCompileInputs.cache
 C:\Users\Raymond\Documents\GitHub\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.exe
 C:\Users\Raymond\Documents\GitHub\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.pdb
+C:\Users\Shah Zeb\cardgame\cardGame\cardGame\bin\Debug\cardGame.exe
+C:\Users\Shah Zeb\cardgame\cardGame\cardGame\bin\Debug\cardGame.pdb
+C:\Users\Shah Zeb\cardgame\cardGame\cardGame\bin\Debug\mscorlib.dll
+C:\Users\Shah Zeb\cardgame\cardGame\cardGame\bin\Debug\normidna.nlp
+C:\Users\Shah Zeb\cardgame\cardGame\cardGame\bin\Debug\normnfc.nlp
+C:\Users\Shah Zeb\cardgame\cardGame\cardGame\bin\Debug\normnfd.nlp
+C:\Users\Shah Zeb\cardgame\cardGame\cardGame\bin\Debug\normnfkc.nlp
+C:\Users\Shah Zeb\cardgame\cardGame\cardGame\bin\Debug\normnfkd.nlp
+C:\Users\Shah Zeb\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.csprojResolveAssemblyReference.cache
+C:\Users\Shah Zeb\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.exe
+C:\Users\Shah Zeb\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.pdb

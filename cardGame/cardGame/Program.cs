@@ -10,103 +10,125 @@ public class CardGame
         //Determine number of players
         bool playersCreated = false;
         int numOfPlayers;
-        do
-        {
-            Console.WriteLine("Please enter number of players:");
-            numOfPlayers = Convert.ToInt32(Console.ReadLine());
-
-            if (numOfPlayers < 2)
-            {
-                Console.WriteLine("\nPlease enter at least 2 Players");
-                Console.ReadLine();
-                Console.Clear();
-            }
-            else if (numOfPlayers >= 2)
-            {
-                Console.WriteLine("\n{0} Players Created!", numOfPlayers);
-                playersCreated = true;
-            }
-        } while (playersCreated == false);
-
-        Console.WriteLine("\nPress any key to START");
-        Console.ReadLine();
-        Console.Clear();
 
 
-        Hand[] player;
-        bool gameOver = false;
-        int cardsPerPlayer = 1;
-        List<int> playerScore;
+		ConsoleKeyInfo key1;
 
-        while (!gameOver)
-        {
-            int roundNum = 0;
+		do
+		{
+			Console.WriteLine("Press Enter to Start the Game or Press Q to Quit ");
 
-            player = new Hand[numOfPlayers];
-            for (int i = 0; i < player.Length; ++i)
-            {
-                player[i] = new Hand();
-            }
+			key1 = Console.ReadKey();
 
-            Deck deck = new Deck();
-
-            int numOfRounds = roundsCheck(deck, numOfPlayers, cardsPerPlayer);
-
-            do
-            {
-                numOfRounds = roundsCheck(deck, numOfPlayers, cardsPerPlayer);
-                if (roundNum != 0)
-                {
-                    deck.printDeck();
-                    Console.WriteLine("");
-                    Console.WriteLine("Round: " + roundNum);
-                    Console.WriteLine("Rounds remaining: " + numOfRounds);
-                    dealPlayerCards(player, cardsPerPlayer, deck);
-
-                    playerScore = new List<int>();
-                    //Shows winner of the round
-                    int RoundWinner = playerCardScore(player);
-                    playerCards(player);
-                    Console.WriteLine("\nPlayer" + RoundWinner + " Won");
-                };
+		}while(!(key1.Key.Equals(ConsoleKey.Q) || key1.Key.Equals(ConsoleKey.Enter)));
 
 
+		if (key1.Key == ConsoleKey.Enter)
+		{
 
-                Console.WriteLine("");
-                Console.WriteLine("Available cards: {0}", deck.DeckSize);
 
-                if (roundNum != numOfRounds)
-                {
-                    ConsoleKeyInfo key;
-                    do
-                    {
-                        Console.WriteLine("Please press Enter to deal cards\n");
-                        key = Console.ReadKey();
-                    } while (!key.Key.Equals(ConsoleKey.Enter));
-                }
-                else if (roundNum == numOfRounds)
-                {
-                    /*List<int> winnerList = new List<int>();
-                    getWinnerScore(player, winnerList);
-                    Console.WriteLine("\nPress any key to Continue");
-                    Console.ReadLine();*/
-                }
+			do
+			{
+				Console.WriteLine("Please enter number of players:");
+				numOfPlayers = Convert.ToInt32(Console.ReadLine());
 
-                roundNum++;
+				if (numOfPlayers < 2)
+				{
+					Console.WriteLine("\nPlease enter at least 2 Players");
+					Console.ReadLine();
+					Console.Clear();
+				}
+				else if (numOfPlayers >= 2)
+				{
+					Console.WriteLine("\n{0} Players Created!", numOfPlayers);
+					playersCreated = true;
+				}
+			} while (playersCreated == false);
 
-            } while (numOfRounds != 0);
 
-            //Quan: FROM LINE 85, couldnt work there
-            List<int> winnerList = new List<int>();
-            getWinnerScore(player, winnerList);
-            Console.WriteLine("\nPress any key to Continue");
-            Console.ReadLine();
-            //end 
+			Console.Clear();
 
-            gameOver = true;
-        }
 
-    }
+			Hand[] player;
+			bool gameOver = false;
+			int cardsPerPlayer = 1;
+			List<int> playerScore;
+
+			while (!gameOver)
+			{
+				int roundNum = 0;
+
+				player = new Hand[numOfPlayers];
+				for (int i = 0; i < player.Length; ++i)
+				{
+					player[i] = new Hand();
+				}
+
+				Deck deck = new Deck();
+
+				int numOfRounds = roundsCheck(deck, numOfPlayers, cardsPerPlayer);
+
+				do
+				{
+					numOfRounds = roundsCheck(deck, numOfPlayers, cardsPerPlayer);
+					if (roundNum != 0)
+					{
+						deck.printDeck();
+						Console.WriteLine("");
+						Console.WriteLine("Round: " + roundNum);
+						Console.WriteLine("Rounds remaining: " + numOfRounds);
+						dealPlayerCards(player, cardsPerPlayer, deck);
+
+						playerScore = new List<int>();
+						//Shows winner of the round
+						int RoundWinner = playerCardScore(player);
+						playerCards(player);
+						Console.WriteLine("\nPlayer" + RoundWinner + " Won");
+					};
+
+
+
+					Console.WriteLine("");
+					Console.WriteLine("Available cards: {0}", deck.DeckSize);
+
+					if (roundNum != numOfRounds)
+					{
+						ConsoleKeyInfo key;
+						do
+						{
+							Console.WriteLine("Please press Enter to deal cards\n");
+							key = Console.ReadKey();
+						} while (!key.Key.Equals(ConsoleKey.Enter));
+					}
+					else if (roundNum == numOfRounds)
+					{
+						/*List<int> winnerList = new List<int>();
+						getWinnerScore(player, winnerList);
+						Console.WriteLine("\nPress any key to Continue");
+						Console.ReadLine();*/
+					}
+
+					roundNum++;
+
+				} while (numOfRounds != 0);
+
+				//Quan: FROM LINE 85, couldnt work there
+				List<int> winnerList = new List<int>();
+				getWinnerScore(player, winnerList);
+				//end 
+
+				gameOver = true;
+			}
+
+		}
+	
+		Console.WriteLine("\n\nThanks for playing the game\n");
+
+		Console.WriteLine("Press Enter to Continue");
+		Console.ReadLine();   
+	
+
+	}
 
 
 
