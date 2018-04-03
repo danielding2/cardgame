@@ -51,8 +51,7 @@ internal class Deck
 			deckList.Add(deckArray[i]);
 		}
 
-		//for testing to see if the deck is shuffled
-
+		/*for debugging 
 		var j = 0;
 		var a = 0;
 		for (a = 0; a < deckArray.Length; a++)
@@ -65,7 +64,7 @@ internal class Deck
 
 		for (j = 0; j < deckList.Count; j++)
 		{
-			Console.WriteLine(deckList[j]);		}
+			Console.WriteLine(deckList[j]);		}*/
 
 
 		//Shuffle it and store in shuffledDeck
@@ -79,47 +78,43 @@ internal class Deck
 		//copy the cards to deckList
 		deckList = shuffledDeck;
 
+		/*for debugging 
 		Console.WriteLine("This is the list of cards have been shuffled:\n\n");
 		var b = 0;
 		for (b = 0; b < deckList.Count; b++)
 		{
 			Console.WriteLine(deckList[b]);
-		}
+		}*/
 
-		//problem when copy back to the stack
+
 		//convert back to array
 		deckArray = deckList.ToArray();
-		var c = 0;
 
+		/*for debugging
+		var c = 0;
 		Console.WriteLine("This is the deckArray");
 		for (c = 0; c < deckArray.Length; c++)
 		{
 			Console.Write(c.ToString());
 			Console.WriteLine(deckArray[c]);
-		}
+		}*/
 
-
+		//problem when copy back to the stack
 		//convert back to stack
 		foreach (Card card in deckArray)
 		{
 			myDeck.Push(card);
 		}
 
+		/*for debugging
 		Console.WriteLine("This is the stack:");
-
 		foreach (Card card in myDeck)
 		{
 			Console.WriteLine(card);
-		}
-
+		}*/
 
 		//return it
 		return myDeck;
-
-
-
-
-
 	}
 
 	public virtual int DeckSize
