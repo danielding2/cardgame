@@ -7,7 +7,7 @@
   <MonoDevelop.Ide.ItemProperties.cardGame PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="cardGame Status">
     <Files>
-      <File FileName="cardGame\Program.cs" Line="1" Column="1" />
+      <File FileName="cardGame\Program.cs" Line="33" Column="1" />
       <File FileName="cardGame\Deck.cs" Line="1" Column="1" />
       <File FileName="cardGame\Card.cs" Line="11" Column="3" />
       <File FileName="cardGame\Ranks.cs" Line="1" Column="1" />

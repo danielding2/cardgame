@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 internal class Deck : IEnumerable<Card>
 {
@@ -47,7 +48,7 @@ internal class Deck : IEnumerable<Card>
 		}*/
 
         //shuffle the cards and add to stack
-        foreach (Card card in deckArray)
+		foreach (Card card in deckArray.OrderBy(x => r.Next()))
 		{
 			myDeck.Push(card);
 		}
