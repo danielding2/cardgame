@@ -83,7 +83,7 @@ public class CardGame
 						//Shows winner of the round
 						int RoundWinner = playerCardScore(player);
 						playerCards(player);
-						Console.WriteLine("\nPlayer" + RoundWinner + " Won");
+						Console.WriteLine("\nPlayer" + RoundWinner + " won Round " + roundNum);
 					};
 
 
@@ -125,7 +125,8 @@ public class CardGame
 		Console.WriteLine("\n\nThanks for playing the game\n");
 
 		Console.WriteLine("Press Enter to Continue");
-		Console.ReadLine();   
+		Console.ReadLine();
+   
 	
 
 	}
@@ -200,11 +201,11 @@ public class CardGame
         };
         if (winnerList.Count == 1)
         {
-            Console.WriteLine("The Winner is P" + winnerList[0] + ". Congratz!!");
+            Console.WriteLine("The overall winner is P" + winnerList[0] + ". Congratz!!");
         }
         else
         {
-            Console.WriteLine("The Winners are ");
+            Console.WriteLine("The overall winners are ");
             for (int i = 0; i < winnerList.Count; ++i)
                 Console.WriteLine("P" + winnerList[i] + " ");
             Console.WriteLine("");
