@@ -12,9 +12,9 @@ internal class Deck : IEnumerable<Card>
 	{
 		deck = new Stack<Card>();
 		newDeck();
-		Console.WriteLine("Deck created");
+		//Console.WriteLine("Deck created");
 		deck = shuffleDeck(deck);
-		Console.WriteLine("Deck shuffled");
+		//Console.WriteLine("Deck shuffled");
 	}
 
 	public virtual void newDeck()

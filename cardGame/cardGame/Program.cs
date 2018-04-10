@@ -7,64 +7,129 @@ public class CardGame
 
     public static void Main(string[] args)
     {
-        //Determine number of players
-        bool playersCreated = false;
-        int numOfPlayers;
-
-
+		Console.OutputEncoding = System.Text.Encoding.UTF8;
 		ConsoleKeyInfo key1;
+
 
 		do
 		{
-			Console.WriteLine("Press Enter to Start the Game or Press Q to Quit ");
+			Console.WriteLine("**Welcome to BlackJack!**\nIn this game, you play against an AI dealer. Good luck!**");
+			Console.WriteLine("\nPress ENTER to Start the Game or Press [Q] to Quit.");
 
 			key1 = Console.ReadKey();
 
 		}while(!(key1.Key.Equals(ConsoleKey.Q) || key1.Key.Equals(ConsoleKey.Enter)));
 
+		ConsoleKeyInfo newRound;
+		string testCard = "\u2660";
 
-		if (key1.Key == ConsoleKey.Enter)
+		do
 		{
-
-
-			do
-			{
-				Console.WriteLine("Please enter number of players:");
-				numOfPlayers = Convert.ToInt32(Console.ReadLine());
-
-				if (numOfPlayers < 2)
-				{
-					Console.WriteLine("\nPlease enter at least 2 Players");
-					Console.ReadLine();
-					Console.Clear();
-				}
-				else if (numOfPlayers >= 2)
-				{
-					Console.WriteLine("\n{0} Players Created!", numOfPlayers);
-					playersCreated = true;
-				}
-			} while (playersCreated == false);
-
-
+			int numOfPlayer;
 			Console.Clear();
+			Console.WriteLine("How many players are playing?");
+			numOfPlayer = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("Press ENTER To start the game");
+			Console.ReadLine();
+
+			//**deal cards to players**
+			for (int x = 1; x < numOfPlayer + 1; x++)
+			{
+				for (int y = 0; y < 2; y++)
+				{
+					//deal cards facing up to player's hand
+
+				}	
+			}
+
+			//display players' cards
+			for (int x = 1; x < numOfPlayer + 1; x++)
+			{
+				Console.WriteLine("Player {0}'s cards:", x);
+				Console.WriteLine("A" + testCard);
+				Console.WriteLine("A" + testCard + "\n");
+			}
+
+			//**deal 2 cards to dealer**
+			//deal 1 card face up
+			//deal 1 card face down
+
+			ConsoleKeyInfo playerAction;
 
 
+			for (int x = 1; x < numOfPlayer + 1; x++)
+			{
+				do
+				{
+					Console.WriteLine("**Player {0}'s turn**\n", x);
+					//display player's cards:
+					/*
+					 * 
+					 */
+
+					Console.WriteLine("\n[D] - Draw a card");
+					Console.WriteLine("[S] - Stand");
+					playerAction = Console.ReadKey();
+
+
+					Console.Clear();
+
+				} while (!(playerAction.Key.Equals(ConsoleKey.S)));
+
+				Console.Clear();
+				Console.WriteLine("**Player {0}'s cards:**", x);
+				//display player's cards:
+				/*
+				 * 
+				 */
+
+				Console.WriteLine("Press ENTER to end turn");
+				Console.ReadLine();
+			}
+
+			//****AI dealer's actions****
+			Console.WriteLine("**Dealer's turn**");
+			//display dealer's cards:
+			/*
+			 * 
+			 * 
+			 */
+
+			//display dealer's actions:
+			/*
+			 * 
+			 */
+
+			//display winners
+			/*
+			 * 
+			 */
+
+			Console.WriteLine("Do you want to play a new round?");
+			Console.WriteLine("[Y] - Yes");
+			Console.WriteLine("[N] - No");
+			newRound = Console.ReadKey();
+
+		} while (!(newRound.Key.Equals(ConsoleKey.N)));
+
+/*** OLD CODE ***
 			Hand[] player;
 			bool gameOver = false;
-			int cardsPerPlayer = 1;
-			List<int> playerScore;
+			//int cardsPerPlayer = 1;
+			//List<int> playerScore;
 
 			while (!gameOver)
 			{
-				int roundNum = 0;
+				//int roundNum = 0;
 
-				player = new Hand[numOfPlayers];
+				player = new Hand[1];
 				for (int i = 0; i < player.Length; ++i)
 				{
 					player[i] = new Hand();
 				}
 
 				Deck deck = new Deck();
+
 
 				int numOfRounds = roundsCheck(deck, numOfPlayers, cardsPerPlayer);
 
@@ -102,13 +167,14 @@ public class CardGame
 					}
 					else if (roundNum == numOfRounds)
 					{
-						/*List<int> winnerList = new List<int>();
+						List<int> winnerList = new List<int>();
 						getWinnerScore(player, winnerList);
 						Console.WriteLine("\nPress any key to Continue");
-						Console.ReadLine();*/
+						Console.ReadLine();
 					}
 
 					roundNum++;
+			
 
 				} while (numOfRounds != 0);
 
@@ -118,9 +184,9 @@ public class CardGame
 				//end 
 
 				gameOver = true;
-			}
+			}*/
 
-		}
+		
 	
 		Console.WriteLine("\n\nThanks for playing the game\n");
 
