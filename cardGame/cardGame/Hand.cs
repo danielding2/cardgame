@@ -1,11 +1,12 @@
+using System;
 using System.Collections.Generic;
 
 internal class Hand
 {
 	private List<Card> cardsInHand;
 	private int sumOfCardValues;
-    private int winCount = 0;
-    private bool winnerForTheRound = false;
+	private string AllCardsInHand;
+	private string TempAllCardsInHand;
 
 	internal Hand()
 	{
@@ -18,11 +19,28 @@ internal class Hand
 		cardsInHand.Add(deck.drawFromDeck());
 	}
 
-	
-	// public virtual string showCardsInHand()
-	// {
-		// return cardsInHand.ToString();
-	// }
+	public virtual string showCardsInHand()
+	{
+		TempAllCardsInHand = "";
+		foreach (Card c in cardsInHand)
+		{
+			Console.OutputEncoding = System.Text.Encoding.UTF8;
+			string a = c.Suit.ToString();
+			string SuitUnicode = "";
+
+			if (a == "SPADES")
+				SuitUnicode = "\u2660";
+			else if (a == "HEARTS")
+				SuitUnicode = "\u2665";
+			else if (a == "DIAMONDS")
+				SuitUnicode = "\u2666";
+			else if (a == "CLUBS")
+				SuitUnicode = "\u2663";
+			TempAllCardsInHand = TempAllCardsInHand + c.Rank + SuitUnicode + " ";
+		}
+		AllCardsInHand = TempAllCardsInHand;
+		return AllCardsInHand;
+	}
 
 	public virtual int CardValueSum
 	{
@@ -43,25 +61,5 @@ internal class Hand
 		cardsInHand.Clear();
 		cardsInHand = new List<Card>(3);
 	}
-
-    public void addWinCount()
-    {
-        this.winCount++;
-    }
-
-    public int getWinCount()
-    {
-        return winCount;
-    }
-
-    public void setWinnerForTheRound(bool winnerForTheRound)
-    {
-        this.winnerForTheRound = winnerForTheRound;
-    }
-
-    public bool getWinnerForTheRound()
-    {
-        return winnerForTheRound;
-    }
 
 }
