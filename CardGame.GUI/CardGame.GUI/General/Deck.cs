@@ -6,14 +6,13 @@ namespace CardGame.GUI.General
 {
     public class Deck
     {
-        private Stack<Card> deck;
+        private Stack<Card> deck = new Stack<Card>();
 
         Random GetRandom = new Random();
 
         //Shuffles a new deck
-        public void Shuffle<Card> (Stack<Card> deck)
+        public void Shuffle()
         {
-            deck = new Stack<Card>();
             var deckArray = deck.ToArray();
             foreach (Card card in deckArray.OrderBy(x => GetRandom.Next()))
             {
@@ -30,7 +29,7 @@ namespace CardGame.GUI.General
             }
         }
 
-        internal Card DealCard()
+        internal Card DrawCard()
         { 
             return deck.Pop();
         }
