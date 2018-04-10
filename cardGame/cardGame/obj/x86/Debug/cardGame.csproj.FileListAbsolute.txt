@@ -70,3 +70,14 @@ C:\Users\dingk\Downloads\@school\DP1\cardgame\cardGame\cardGame\bin\Debug\normnf
 C:\Users\dingk\Downloads\@school\DP1\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.csprojResolveAssemblyReference.cache
 C:\Users\dingk\Downloads\@school\DP1\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.exe
 C:\Users\dingk\Downloads\@school\DP1\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.pdb
+C:\cardgame\cardGame\cardGame\bin\Debug\cardGame.exe
+C:\cardgame\cardGame\cardGame\bin\Debug\cardGame.pdb
+C:\cardgame\cardGame\cardGame\bin\Debug\mscorlib.dll
+C:\cardgame\cardGame\cardGame\bin\Debug\normidna.nlp
+C:\cardgame\cardGame\cardGame\bin\Debug\normnfc.nlp
+C:\cardgame\cardGame\cardGame\bin\Debug\normnfd.nlp
+C:\cardgame\cardGame\cardGame\bin\Debug\normnfkc.nlp
+C:\cardgame\cardGame\cardGame\bin\Debug\normnfkd.nlp
+C:\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.csprojResolveAssemblyReference.cache
+C:\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.exe
+C:\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.pdb
