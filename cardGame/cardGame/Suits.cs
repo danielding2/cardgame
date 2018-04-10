@@ -1,7 +1,7 @@
-internal enum Suits
+public enum Suits
 {
-	SPADES,
-	HEARTS,
-	DIAMONDS,
-	CLUBS
+    SPADES, //0
+    HEARTS,
+    DIAMONDS,
+    CLUBS
 }
