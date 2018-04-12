@@ -12,9 +12,7 @@ public class Deck : IEnumerable<Card>
     {
         deck = new Stack<Card>();
         NewDeck();
-        Console.WriteLine("Deck created");
         deck = ShuffleDeck(deck);
-        Console.WriteLine("Deck shuffled");
     }
 
     public void NewDeck()

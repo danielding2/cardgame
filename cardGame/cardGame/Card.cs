@@ -4,7 +4,7 @@ public class Card
     private Ranks rank;
     private Suits suit;
 
-    internal Card(Suits suit, Ranks rank)
+    public Card(Suits suit, Ranks rank)
     {
         this.rank = rank;
         this.suit = suit;
@@ -36,13 +36,9 @@ public class Card
         get
         {
             if ((int)rank < 9)
-            {
-                return ((int)rank + 1);
-            }
+                return (int)rank;
             else
-            {
                 return 10;
-            }
         }
     }
 
