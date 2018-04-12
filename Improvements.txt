@@ -43,6 +43,9 @@ GUI
 4. Are you sure to quit screen
 5. BGM
 6. Font Change
+7. Splash screen
+8. About us screen
+9. App logo
 
 good luck 
 
