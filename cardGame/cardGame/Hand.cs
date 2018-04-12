@@ -70,17 +70,18 @@ public class Hand
         get
         {
             sumOfCardValues = 0;
-
             for (int i = 0; i < cardsInHand.Count; ++i)
             {
                 sumOfCardValues += cardsInHand[i].CardValue;
             }
 
+            // easy lucky blackjack 
             if (cardsInHand.Count == 2 && ((cardsInHand[0].CardValue == (int)Ranks.Ace && (int)cardsInHand[1].CardValue >= 10) || (cardsInHand[1].CardValue == (int)Ranks.Ace && (int)cardsInHand[0].CardValue >= 10)))
             {
                 return 21;
             }
-
+            
+            //If total card sum <=10 and has an ace card, ace will be counted as 11
             for (int i = 0; i < cardsInHand.Count; ++i)
             {
                 if (sumOfCardValues <= 10)
@@ -88,6 +89,7 @@ public class Hand
                         sumOfCardValues = sumOfCardValues + 10;
             }
 
+            //busted 
             if (sumOfCardValues > 21)
             {
                 sumOfCardValues = -1;
@@ -97,6 +99,7 @@ public class Hand
         }
     }
 
+    //Get 1st dealer's card value only
     public int DealerCardValue
     {
         get
@@ -105,14 +108,18 @@ public class Hand
         }       
     }
 
-    public void DealNewSetOfCards()
-    {
-        cardsInHand.Clear();
-        cardsInHand = new List<Card>();
-    }
-
     public void ClearHand()
     {
         cardsInHand.Clear();
     }
+
+    /* unused code
+    public void DealNewSetOfCards()
+    {
+        cardsInHand.Clear();
+        cardsInHand = new List<Card>();
+    }*/
+
+
+
 }

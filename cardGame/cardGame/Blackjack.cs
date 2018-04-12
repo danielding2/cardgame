@@ -18,7 +18,7 @@ namespace cardGame
         {
             player = new Hand();
             dealer = new Hand();
-            numOfRounds = 1;
+            numOfRounds = 0;
             gameOver = false;
             MainGame(player, dealer, deck);            
         }
@@ -29,21 +29,18 @@ namespace cardGame
             //deck.PrintDeck();
             Console.WriteLine("WELCOME TO BLACKJACK CONSOLE VERSION!\n");
 
-            if (StartOrQuit())
+            NewRoundOrQuit();
+
+            while (!gameOver)
             {
-                Console.Clear();
+                Console.WriteLine("Blackjack Console version, YOU VS DEALER! \nRound: " + numOfRounds + "\n");
+                DealFirst2Cards(player, dealer);
 
-                while (!gameOver)
-                {
-                    Console.WriteLine("Blackjack Console version, YOU VS DEALER! \nRound: " + numOfRounds + "\n");
-                    DealFirst2Cards(player, dealer);
+                PrintTotalPointsHidden(player,dealer);
 
-                    PrintTotalPointsHidden(player,dealer);
-
-                    GameLogic(player, dealer);
-                }
-                Console.ReadLine();
+                GameLogic(player, dealer);
             }
+            Console.ReadLine();
         }
 
         public void Restart()
@@ -65,12 +62,14 @@ namespace cardGame
             dealer.DealCard(deck);
         }
 
-        public void PrintTotalPointsShow(Hand player, Hand dealer)
+        // Dealer 2nd card shown
+        public void PrintTotalPointsShow(Hand player, Hand dealer) 
         {
             Console.WriteLine("Player's Hand: " + player.ShowCardsInHand() + "  Total: " + player.CardValueSum);
             Console.WriteLine("Dealer's Hand: " + dealer.ShowCardsInHand() + "  Total: " + dealer.CardValueSum);
         }
 
+        // Dealer 2nd card hidden - showCardsInHand lazy way to overload
         public void PrintTotalPointsHidden(Hand player, Hand dealer)
         {
             Console.WriteLine("Player's Hand: " + player.ShowCardsInHand() + "  Total: " + player.CardValueSum);
@@ -88,11 +87,13 @@ namespace cardGame
                 key = Console.ReadKey();
             } while (!(key.Key.Equals(ConsoleKey.N) || key.Key.Equals(ConsoleKey.H) || key.Key.Equals(ConsoleKey.S) || key.Key.Equals(ConsoleKey.Q)));
 
+            // if player chooses to restart the game 
             if (key.Key == ConsoleKey.N)
             {
                 Restart();
             }
 
+            // if player chooses to Hit (ask for another card)
             if (key.Key == ConsoleKey.H)
             {
                 player.DealCard(deck);
@@ -109,48 +110,34 @@ namespace cardGame
                     goto HitChoice;
             }
 
+            // if player chooses to Stand (not ask for another card)
             if (key.Key == ConsoleKey.S)
             {
-                if(dealer.CardValueSum <= 16)
+                //dealer deals until points > 16
+                while(dealer.CardValueSum <= 16)
                 {
                     dealer.DealCard(deck);
                 }
+
                 Console.WriteLine("\n\nYou stand");
                 PrintTotalPointsShow(player, dealer);
 
                 if (player.CardValueSum > dealer.CardValueSum)
                     Console.WriteLine("\nYou win!");
+                else if (player.CardValueSum == dealer.CardValueSum)
+                    Console.WriteLine("\nDraw");
                 else
                     Console.WriteLine("\nDealer wins!");
 
                 NewRoundOrQuit();
             }
 
+            // if player chooses to quit the game
             if (key.Key == ConsoleKey.Q)
             {
                 Console.WriteLine("\n\nTHANKS FOR PLAYING BLACKJACK!");
                 gameOver = true;
             }
-        }
-
-        public bool StartOrQuit()
-        { 
-            ConsoleKeyInfo key;
-            do
-            {
-                Console.WriteLine("\nPress Enter play Blackjack or Press Q to Quit");
-                key = Console.ReadKey();
-            } while (!(key.Key.Equals(ConsoleKey.Q) || key.Key.Equals(ConsoleKey.Enter)));
-
-            if (key.Key == ConsoleKey.Enter)
-            {
-                return true;
-            }
-            else
-            {
-                gameOver = true;
-                return false;
-            }               
         }
 
         public void NewRoundOrQuit()
@@ -159,9 +146,18 @@ namespace cardGame
             dealer.ClearHand();
             numOfRounds++;
 
-            if (StartOrQuit())
-                Console.Clear();
-        }
+            ConsoleKeyInfo key;
+            do
+            {
+                Console.WriteLine("\nPress Enter play Blackjack or Press Q to Quit");
+                key = Console.ReadKey();
+            } while (!(key.Key.Equals(ConsoleKey.Q) || key.Key.Equals(ConsoleKey.Enter)));
 
+            if (key.Key == ConsoleKey.Enter)
+                Console.Clear();
+            else
+                gameOver = true;
+
+        }
     }
 }
