@@ -13,6 +13,7 @@ namespace cardGame
         public Deck deck = new Deck();
         private bool gameOver;
         private int numOfRounds;
+        
 
         public Blackjack() 
         {
@@ -33,9 +34,9 @@ namespace cardGame
 
             while (!gameOver)
             {
-                Console.WriteLine("Blackjack Console version, YOU VS DEALER! \nRound: " + numOfRounds + "\n");
+                Console.WriteLine("Blackjack Console version, YOU VS DEALER! \nRound: " + numOfRounds);
                 DealFirst2Cards(player, dealer);
-
+                Console.WriteLine(deck.Count() + " cards left!" + "\n"); 
                 PrintTotalPointsHidden(player,dealer);
 
                 GameLogic(player, dealer);
@@ -65,15 +66,15 @@ namespace cardGame
         // Dealer 2nd card shown
         public void PrintTotalPointsShow(Hand player, Hand dealer) 
         {
-            Console.WriteLine("Player's Hand: " + player.ShowCardsInHand() + "  Total: " + player.CardValueSum);
-            Console.WriteLine("Dealer's Hand: " + dealer.ShowCardsInHand() + "  Total: " + dealer.CardValueSum);
+            Console.WriteLine("Player's Hand: " + player.ShowCardsInHand() + "  Total: " + player.CardValueSum + " " + BustedPrintPlayer());
+            Console.WriteLine("Dealer's Hand: " + dealer.ShowCardsInHand() + "  Total: " + dealer.CardValueSum + " " + BustedPrintDealer());
         }
 
         // Dealer 2nd card hidden - showCardsInHand lazy way to overload
         public void PrintTotalPointsHidden(Hand player, Hand dealer)
         {
-            Console.WriteLine("Player's Hand: " + player.ShowCardsInHand() + "  Total: " + player.CardValueSum);
-            Console.WriteLine("Dealer's Hand: " + dealer.ShowCardsInHand(true) + "  Total: " + dealer.DealerCardValue);
+            Console.WriteLine("Player's Hand: " + player.ShowCardsInHand() + "  Total: " + player.CardValueSum + " " + BustedPrintPlayer());
+            Console.WriteLine("Dealer's Hand: " + dealer.ShowCardsInHand(true) + "  Total: " + dealer.DealerCardValue + " " + BustedPrintDealer());
         }
 
         public void GameLogic(Hand player, Hand dealer)
@@ -96,7 +97,10 @@ namespace cardGame
             // if player chooses to Hit (ask for another card)
             if (key.Key == ConsoleKey.H)
             {
-                player.DealCard(deck);
+                if (deck.Count() != 0)
+                    player.DealCard(deck);
+                else
+                    Console.WriteLine("No cards left to hit");
 
                 Console.WriteLine("\n\nYou hit");
                 PrintTotalPointsHidden(player, dealer);
@@ -116,7 +120,10 @@ namespace cardGame
                 //dealer deals until points > 16
                 while(dealer.CardValueSum <= 16)
                 {
-                    dealer.DealCard(deck);
+                    if (!dealer.bustedOrNot && deck.Count() != 0)
+                        dealer.DealCard(deck);
+                    else
+                        break;
                 }
 
                 Console.WriteLine("\n\nYou stand");
@@ -128,7 +135,7 @@ namespace cardGame
                     Console.WriteLine("\nDraw");
                 else
                     Console.WriteLine("\nDealer wins!");
-
+                Console.WriteLine(deck.Count());
                 NewRoundOrQuit();
             }
 
@@ -138,6 +145,17 @@ namespace cardGame
                 Console.WriteLine("\n\nTHANKS FOR PLAYING BLACKJACK!");
                 gameOver = true;
             }
+
+            //check if enough cards for next round
+            if (deck.Count() < 5)
+            {
+                Console.WriteLine("\nNo more cards left in the deck for another round!");
+                NewRoundOrQuit();
+                if (key.Key == ConsoleKey.Enter)
+                {
+                    Restart();
+                }
+            }                
         }
 
         public void NewRoundOrQuit()
@@ -158,6 +176,28 @@ namespace cardGame
             else
                 gameOver = true;
 
+        }
+
+        public string BustedPrintPlayer()
+        {
+            //if busted
+            string bustedPrint;
+            if (player.bustedOrNot)
+                bustedPrint = "Busted!";
+            else
+                bustedPrint = "";
+            return bustedPrint;
+        }
+
+        public string BustedPrintDealer()
+        {
+            //if busted
+            string bustedPrint;
+            if (dealer.bustedOrNot)
+                bustedPrint = "Busted!";
+            else
+                bustedPrint = "";
+            return bustedPrint;
         }
     }
 }

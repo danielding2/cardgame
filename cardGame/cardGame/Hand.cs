@@ -7,10 +7,12 @@ public class Hand
     private int sumOfCardValues;
     private string AllCardsInHand;
     private string TempAllCardsInHand;
+    private bool busted;
 
     public Hand()
     {
         cardsInHand = new List<Card>();
+        busted = false;
     }
 
     public void DealCard(Deck deck)
@@ -93,10 +95,20 @@ public class Hand
             if (sumOfCardValues > 21)
             {
                 sumOfCardValues = -1;
+                busted = true;
             }
 
             return sumOfCardValues;
         }
+    }
+
+    public bool bustedOrNot
+    {
+        get
+        {
+            return busted;
+        }
+            
     }
 
     //Get 1st dealer's card value only
