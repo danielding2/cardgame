@@ -108,6 +108,10 @@ public class Hand
         {
             return busted;
         }
+        set
+        {
+            busted = false;
+        }
             
     }
 

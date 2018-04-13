@@ -81,3 +81,9 @@ C:\cardgame\cardGame\cardGame\bin\Debug\normnfkd.nlp
 C:\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.csprojResolveAssemblyReference.cache
 C:\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.exe
 C:\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.pdb
+C:\Users\cyq22\Source\Repos\cardgame\cardGame\cardGame\bin\Debug\cardGame.exe
+C:\Users\cyq22\Source\Repos\cardgame\cardGame\cardGame\bin\Debug\cardGame.pdb
+C:\Users\cyq22\Source\Repos\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.csprojResolveAssemblyReference.cache
+C:\Users\cyq22\Source\Repos\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.csproj.CoreCompileInputs.cache
+C:\Users\cyq22\Source\Repos\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.exe
+C:\Users\cyq22\Source\Repos\cardgame\cardGame\cardGame\obj\x86\Debug\cardGame.pdb

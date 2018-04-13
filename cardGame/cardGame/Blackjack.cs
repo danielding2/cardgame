@@ -34,6 +34,8 @@ namespace cardGame
 
             while (!gameOver)
             {
+                player.bustedOrNot = false;
+                dealer.bustedOrNot = false;
                 Console.WriteLine("Blackjack Console version, YOU VS DEALER! \nRound: " + numOfRounds);
                 DealFirst2Cards(player, dealer);
                 Console.WriteLine(deck.Count() + " cards left!" + "\n"); 
