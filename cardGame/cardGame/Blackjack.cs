@@ -68,15 +68,15 @@ namespace cardGame
         // Dealer 2nd card shown
         public void PrintTotalPointsShow(Hand player, Hand dealer) 
         {
-            Console.WriteLine("Player's Hand: " + player.ShowCardsInHand() + "  Total: " + player.CardValueSum + " " + BustedPrintPlayer());
-            Console.WriteLine("Dealer's Hand: " + dealer.ShowCardsInHand() + "  Total: " + dealer.CardValueSum + " " + BustedPrintDealer());
+            Console.WriteLine("Player's Hand: |" + player.ShowCardsInHand() + " | Total: " + player.CardValueSum + " " + BustedPrintPlayer());
+            Console.WriteLine("Dealer's Hand: |" + dealer.ShowCardsInHand() + " | Total: " + dealer.CardValueSum + " " + BustedPrintDealer());
         }
 
         // Dealer 2nd card hidden - showCardsInHand lazy way to overload
         public void PrintTotalPointsHidden(Hand player, Hand dealer)
         {
-            Console.WriteLine("Player's Hand: " + player.ShowCardsInHand() + "  Total: " + player.CardValueSum + " " + BustedPrintPlayer());
-            Console.WriteLine("Dealer's Hand: " + dealer.ShowCardsInHand(true) + "  Total: " + dealer.DealerCardValue + " " + BustedPrintDealer());
+            Console.WriteLine("Player's Hand: |" + player.ShowCardsInHand() + " | Total: " + player.CardValueSum + " " + BustedPrintPlayer());
+            Console.WriteLine("Dealer's Hand: |" + dealer.ShowCardsInHand(true) + " | Total: " + dealer.DealerCardValue + " " + BustedPrintDealer());
         }
 
         public void GameLogic(Hand player, Hand dealer)
@@ -86,7 +86,7 @@ namespace cardGame
             HitChoice:
             do
             {
-                Console.WriteLine("Press n to Start a new game, Press h to Hit, Press s to Stand, Press q to Quit");
+                Console.WriteLine("\nPress n to Start a new game, Press h to Hit, Press s to Stand, Press q to Quit");
                 key = Console.ReadKey();
             } while (!(key.Key.Equals(ConsoleKey.N) || key.Key.Equals(ConsoleKey.H) || key.Key.Equals(ConsoleKey.S) || key.Key.Equals(ConsoleKey.Q)));
 
