@@ -1,9 +1,10 @@
 using CardGame.GUI.General;
+using System;
 using System.Collections.Generic;
 
 namespace CardGame.GUI.Players
 {
-    public class Hand
+    public class Player
     {
         private List<Card> cardsInHand = new List<Card>();
         private int handValue;
@@ -11,19 +12,14 @@ namespace CardGame.GUI.Players
         //Player's status, true if handValue > 21, false if handValue < 21
         private bool Kaboom { get; set; }
 
-        public Hand()
+        public Player()
         {
             Kaboom = false;
         }
 
-        public void DealCard(Deck deck)
+        public void GetCard(Deck deck)
         {
-            cardsInHand.Add(deck.DealCard());
-        }
-
-        public virtual string ShowCardsInHand()
-        {
-            return cardsInHand.ToString();
+            cardsInHand.Add(deck.DrawCard());
         }
 
         //Determines the hand's value
@@ -55,6 +51,11 @@ namespace CardGame.GUI.Players
             }
 
             return handValue;
+        }
+
+        internal List<Card> ShowHand()
+        {
+            return cardsInHand;
         }
 
         //Folds the cards, equivalent to forfeiting the round
