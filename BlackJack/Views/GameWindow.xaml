@@ -40,7 +40,8 @@
         <Button Command="{ Binding Commands.SplitCommand }" Name="Split" Content="Split!" HorizontalAlignment="Left" Margin="912,54,-94,0" VerticalAlignment="Top" Width="94" Height="27" RenderTransformOrigin="0.574,-0.259" Visibility="Hidden" />
         <Button Command="{ Binding Commands.StandCommand }" Name="Stand" Content="Stand" Margin="352,198,463,0" VerticalAlignment="Top" Height="27" FontFamily="Showcard Gothic" />
         <Button Command="{ Binding Commands.DealCommand }" Name="Deal" Content="Deal" HorizontalAlignment="Left" Margin="352,94,0,0" VerticalAlignment="Top" Width="89" Height="27" FontFamily="Showcard Gothic" />
-
+        <Button  Command="{ Binding Commands.RulesCommand }" Name="Rules" Content="Rules" HorizontalAlignment="Left" Margin="800,18,0,0" VerticalAlignment="Top" Width="89" Height="27" FontFamily="Showcard Gothic" />
+        
         <!-- Default labels -->
         <Label Name="ComputerPoints" Content="0" HorizontalAlignment="Left" Margin="689,31,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.663,0.188" FontFamily="Showcard Gothic" Foreground="White" />
         <Label Name="PlayerPoints" Content="0" HorizontalAlignment="Left" Margin="189,31,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" Foreground="White" />

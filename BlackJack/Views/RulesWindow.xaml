@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen" Title="RulesWindow" Height="300" Width="300" ResizeMode="NoResize">
     <Grid>
-        <Label Content="Rules:" FontSize="22"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="68"/>
-        <Label Content="1. Click 'Deal' to start the round.&#xD;&#xA;2. Click 'Hit' to draw a card.&#xD;&#xA;3. Click 'Stand' to stand." HorizontalAlignment="Left" Margin="10,54,0,45" Width="272" />
+        <Label Content="Welcome to Blackjack:" FontSize="22"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="255"/>
+        <Label Content="1. Reach $2000 to win the game&#xD;&#xA;2. Click 'Deal' to start the round.&#xA;3. Click 'Hit' to draw a card.&#xA;4. Click 'Stand' to stand.&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,54,0,45" Width="272" />
     </Grid>
 </Window>
