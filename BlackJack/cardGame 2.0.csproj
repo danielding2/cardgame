@@ -128,174 +128,68 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="Images\background_poker.jpg" />
+    <None Include="Images\c1.png" />
+    <None Include="Images\c2.png" />
+    <None Include="Images\c3.png" />
+    <None Include="Images\c4.png" />
+    <None Include="Images\c5.png" />
+    <None Include="Images\c6.png" />
+    <None Include="Images\c7.png" />
+    <None Include="Images\c8.png" />
+    <None Include="Images\c9.png" />
+    <None Include="Images\c10.png" />
+    <None Include="Images\cj.png" />
+    <None Include="Images\ck.png" />
+    <None Include="Images\computer.png" />
+    <None Include="Images\cq.png" />
+    <None Include="Images\d1.png" />
+    <None Include="Images\d2.png" />
+    <None Include="Images\d3.png" />
+    <None Include="Images\d4.png" />
+    <None Include="Images\d5.png" />
+    <None Include="Images\d6.png" />
+    <None Include="Images\d7.png" />
+    <None Include="Images\d8.png" />
+    <None Include="Images\d9.png" />
+    <None Include="Images\d10.png" />
+    <None Include="Images\dj.png" />
+    <None Include="Images\dk.png" />
+    <None Include="Images\dq.png" />
+    <None Include="Images\h1.png" />
+    <None Include="Images\h2.png" />
+    <None Include="Images\h3.png" />
+    <None Include="Images\h4.png" />
+    <None Include="Images\h5.png" />
+    <None Include="Images\h6.png" />
+    <None Include="Images\h7.png" />
+    <None Include="Images\h8.png" />
+    <None Include="Images\h9.png" />
+    <None Include="Images\h10.png" />
+    <None Include="Images\hj.png" />
+    <None Include="Images\hk.png" />
+    <None Include="Images\hq.png" />
+    <None Include="Images\player.png" />
+    <None Include="Images\s1.png" />
+    <None Include="Images\s2.png" />
+    <None Include="Images\s3.png" />
+    <None Include="Images\s4.png" />
+    <None Include="Images\s5.png" />
+    <None Include="Images\s6.png" />
+    <None Include="Images\s7.png" />
+    <None Include="Images\s8.png" />
+    <None Include="Images\s9.png" />
+    <None Include="Images\s10.png" />
+    <None Include="Images\sj.png" />
+    <None Include="Images\sk.png" />
+    <None Include="Images\sq.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\computer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\player.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\c1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\c10.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\c2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\c3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\c4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\c5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\c6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\c7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\c8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\c9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\cj.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\ck.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\cq.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\d1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\d10.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\d2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\d3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\d4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\d5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\d6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\d7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\d8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\d9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\dj.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\dk.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\dq.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\h1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\h10.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\h2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\h3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\h4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\h5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\h6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\h7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\h8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\h9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\hj.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\hk.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\hq.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\s1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\s10.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\s2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\s3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\s4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\s5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\s6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\s7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\s8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\s9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\sj.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\sk.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\sq.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\background_poker.jpg" />
+    <Folder Include="Images\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
