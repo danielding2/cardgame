@@ -1,0 +1,20 @@
+﻿<Window x:Class="Blackjack.Views.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Blackjack.Views"
+        mc:Ignorable="d"
+        Title="Welcome to cardGame 2.0!" Height="188.228" Width="300" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    
+    <Grid Margin="0,0,0,4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="226*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Please enter your name:" HorizontalAlignment="Left" Margin="6.8,26,0,0" VerticalAlignment="Top" Width="167" FontFamily="Showcard Gothic" Grid.Column="1"/>
+        <TextBox Text="{ Binding Name, UpdateSourceTrigger=PropertyChanged }" HorizontalAlignment="Left" Height="23" Margin="17.694,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Grid.Column="1" FontFamily="Showcard Gothic"/>
+        <Button Command="{ Binding StartCommand }" IsDefault="True" Content="Play!" HorizontalAlignment="Left" Margin="45.694,105,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" FontFamily="Showcard Gothic" />
+    </Grid>
+</Window>
