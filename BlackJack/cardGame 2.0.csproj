@@ -181,7 +181,8 @@
     <None Include="Images\sk.png" />
     <None Include="Images\sq.png" />
     <None Include="Helpers\GameHelper.cs" />
-    <None Include="Images\background_poker.jpg" />
+    <None Include="Helpers\ImagesHelper.cs" />
+    <None Include="Images\background_poker.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
