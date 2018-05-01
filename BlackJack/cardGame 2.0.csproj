@@ -181,6 +181,8 @@
     <None Include="Images\sk.png" />
     <None Include="Images\sq.png" />
     <None Include="Images\background_poker.png" />
+    <None Include="Helpers\GameHelper.cs" />
+    <None Include="Helpers\ImagesHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -188,6 +190,7 @@
   <ItemGroup>
     <Folder Include="Images\" />
     <Folder Include="Images\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
