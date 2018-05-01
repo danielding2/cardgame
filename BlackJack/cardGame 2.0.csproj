@@ -63,8 +63,6 @@
     <Compile Include="Commands\StandLeftCommand.cs" />
     <Compile Include="Commands\StandRightCommand.cs" />
     <Compile Include="Commands\StartCommand.cs" />
-    <Compile Include="Helpers\GameHelper.cs" />
-    <Compile Include="Helpers\ImagesHelper.cs" />
     <Compile Include="Interfaces\IView.cs" />
     <Compile Include="Models\Commands.cs" />
     <Compile Include="Models\Player.cs" />
@@ -128,7 +126,6 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <None Include="Images\background_poker.jpg" />
     <None Include="Images\c1.png" />
     <None Include="Images\c2.png" />
     <None Include="Images\c3.png" />
@@ -183,6 +180,8 @@
     <None Include="Images\sj.png" />
     <None Include="Images\sk.png" />
     <None Include="Images\sq.png" />
+    <None Include="Helpers\GameHelper.cs" />
+    <None Include="Images\background_poker.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -190,6 +189,7 @@
   <ItemGroup>
     <Folder Include="Images\" />
     <Folder Include="Images\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
