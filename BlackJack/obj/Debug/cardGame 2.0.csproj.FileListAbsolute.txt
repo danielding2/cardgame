@@ -6,7 +6,6 @@ C:\Users\ciacia\Documents\GitHub\cardgame\Blackjack\obj\Debug\Views\StartWindow.
 C:\Users\ciacia\Documents\GitHub\cardgame\Blackjack\obj\Debug\App.g.cs
 C:\Users\ciacia\Documents\GitHub\cardgame\Blackjack\obj\Debug\Blackjack_MarkupCompile.cache
 C:\Users\ciacia\Documents\GitHub\cardgame\Blackjack\obj\Debug\Blackjack_MarkupCompile.lref
-C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\cardGame 2.0.csprojResolveAssemblyReference.cache
 C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Views\EndWindow.g.cs
 C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Views\GameWindow.g.cs
 C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Views\RulesWindow.g.cs
@@ -14,3 +13,5 @@ C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Views\StartWindow
 C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\App.g.cs
 C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Blackjack_MarkupCompile.cache
 C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Blackjack_MarkupCompile.lref
+C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\cardGame 2.0_MarkupCompile.cache
+C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\cardGame 2.0_MarkupCompile.lref

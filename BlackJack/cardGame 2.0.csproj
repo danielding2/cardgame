@@ -33,6 +33,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -63,6 +67,8 @@
     <Compile Include="Commands\StandLeftCommand.cs" />
     <Compile Include="Commands\StandRightCommand.cs" />
     <Compile Include="Commands\StartCommand.cs" />
+    <Compile Include="Helpers\GameHelper.cs" />
+    <Compile Include="Helpers\ImagesHelper.cs" />
     <Compile Include="Interfaces\IView.cs" />
     <Compile Include="Models\Commands.cs" />
     <Compile Include="Models\Player.cs" />
@@ -180,13 +186,10 @@
     <None Include="Images\sj.png" />
     <None Include="Images\sk.png" />
     <None Include="Images\sq.png" />
-    <None Include="Helpers\GameHelper.cs" />
-    <None Include="Helpers\ImagesHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Resource Include="Images\background_poker.jpg" />
   </ItemGroup>
