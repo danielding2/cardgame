@@ -13,5 +13,17 @@ C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Views\StartWindow
 C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\App.g.cs
 C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Blackjack_MarkupCompile.cache
 C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Blackjack_MarkupCompile.lref
-C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\cardGame 2.0_MarkupCompile.cache
-C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\cardGame 2.0_MarkupCompile.lref
+C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\bin\Debug\Blackjack.exe.config
+C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\bin\Debug\Blackjack.exe
+C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\bin\Debug\Blackjack.pdb
+C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\cardGame 2.0.csprojResolveAssemblyReference.cache
+C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Views\EndWindow.baml
+C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Views\GameWindow.baml
+C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Views\RulesWindow.baml
+C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Views\StartWindow.baml
+C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Blackjack.g.resources
+C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Blackjack.Properties.Resources.resources
+C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\cardGame 2.0.csproj.GenerateResource.cache
+C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\cardGame 2.0.csproj.CoreCompileInputs.cache
+C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Blackjack.exe
+C:\Users\Raymond\Documents\GitHub\cardgame\Blackjack\obj\Debug\Blackjack.pdb

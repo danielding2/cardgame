@@ -17,7 +17,7 @@ namespace Blackjack.Views
     /// <summary>
     /// Interaction logic for RulesWindow.xaml
     /// </summary>
-    public partial class RulesWindow : Window
+    public partial class RulesWindow
     {
         public RulesWindow()
         {

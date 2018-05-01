@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Blackjack.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +18,12 @@ namespace Blackjack.Views
     /// <summary>
     /// Interaction logic for StartWindow.xaml
     /// </summary>
-    public partial class StartWindow : Window
+    public partial class StartWindow
     {
         public StartWindow()
         {
             InitializeComponent();
+            this.DataContext = new StartViewModel(this);
         }
     }
 }
